@@ -38,12 +38,16 @@ One of the greatest strengths of the Warriors is their ability to shoot. With sh
 2 Point Effective Shooting Percentage by Player
 </h6>
 </center>
-          name total made perc_made
-    1 Iguodala   210  134 0.6380952
-    2   Durant   643  390 0.6065319
-    3    Curry   563  304 0.5399645
-    4 Thompson   640  329 0.5140625
-    5    Green   346  171 0.4942197
+``` r
+arrange(two_pt, desc(perc_made))
+```
+
+    ##       name total made perc_made
+    ## 1 Iguodala   210  134 0.6380952
+    ## 2   Durant   643  390 0.6065319
+    ## 3    Curry   563  304 0.5399645
+    ## 4 Thompson   640  329 0.5140625
+    ## 5    Green   346  171 0.4942197
 
 Interestingly, Iguodala has the highest percentage of 2 point field goals made at 63.9%; however, it should be noted that Iguodala shoots significantly less than the other players. Durant, Curry, and Thompson are the primary driving force behind the Warriors' offense. Kevin Durant is the Warriors' best 2 point field goal shooter: he takes the most shots at 643 but still makes 390 of them resulting in a very respectable 61% 2 point field goals made. It is also important to highlight that the average 2 point field goal percentage in the NBA is a mere 45.7%. With all the Warriors players passing that mark shows just how good they are at shooting within the arc.
 

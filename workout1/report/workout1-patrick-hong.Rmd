@@ -77,7 +77,10 @@ made_2pt <- c(length(made_2pt_iguodala$shot_made_flag), length(made_2pt_green$sh
 perc_made_2pt <- c(perc_made_2pt_iguodala, perc_made_2pt_green, perc_made_2pt_durant, perc_made_2pt_thompson, perc_made_2pt_curry)
 
 two_pt <- data.frame("name" = name, "total" = total_2pt, "made" = made_2pt, "perc_made" = perc_made_2pt)
+```
 
+
+```{r}
 arrange(two_pt, desc(perc_made))
 ```
 
