@@ -39,7 +39,7 @@ One of the greatest strengths of the Warriors is their ability to shoot. With sh
 </h6>
 </center>
 ``` r
-a
+arrange(two_pt, desc(perc_made))
 ```
 
     ##       name total made perc_made
@@ -48,15 +48,6 @@ a
     ## 3    Curry   563  304 0.5399645
     ## 4 Thompson   640  329 0.5140625
     ## 5    Green   346  171 0.4942197
-
-    FALSE # A tibble: 5 x 4
-    FALSE   name            made total perc_made
-    FALSE   <chr>          <int> <int>     <dbl>
-    FALSE 1 Andre Iguodala   134   210     0.638
-    FALSE 2 Kevin Durant     390   643     0.607
-    FALSE 3 Stephen Curry    304   563     0.540
-    FALSE 4 Klay Thompson    329   640     0.514
-    FALSE 5 Draymond Green   171   346     0.494
 
 Interestingly, Iguodala has the highest percentage of 2 point field goals made at 63.9%; however, it should be noted that Iguodala shoots significantly less than the other players. Durant, Curry, and Thompson are the primary driving force behind the Warriors' offense. Kevin Durant is the Warriors' best 2 point field goal shooter: he takes the most shots at 643 but still makes 390 of them resulting in a very respectable 61% 2 point field goals made. It is also important to highlight that the average 2 point field goal percentage in the NBA is a mere 45.7%. With all the Warriors players passing that mark shows just how good they are at shooting within the arc.
 
@@ -69,12 +60,16 @@ Although the Warriors are great 2 point shooters, their ability to shoot 3 point
 3 Point Effective Shooting Percentage by Player
 </h6>
 </center>
-          name total made perc_made
-    1 Thompson   580  246 0.4241379
-    2    Curry   687  280 0.4075691
-    3   Durant   272  105 0.3860294
-    4 Iguodala   161   58 0.3602484
-    5    Green   232   74 0.3189655
+``` r
+arrange(three_pt, desc(perc_made))
+```
+
+    ##       name total made perc_made
+    ## 1 Thompson   580  246 0.4241379
+    ## 2    Curry   687  280 0.4075691
+    ## 3   Durant   272  105 0.3860294
+    ## 4 Iguodala   161   58 0.3602484
+    ## 5    Green   232   74 0.3189655
 
 Surprisingly Curry does not have the highest percentage of 3's made. Thompson who is often overshadowed by Curry, makes more than 42% of the 3's he takes. Curry isn't far behind: shooting a respectable 41% from beyond the arc. Curry does however, take more than 100 more 3's than Thompson. Durant and Iguodala are also great 3 point shooters: shooting 38.6% and 36.0% respectively. The league's average is 35.7% from behind the 3 point line so 4 out of the 5 Warrior players are shooting above average. The only player to struggle is Draymond Green but it is well known that Green is not a good 3 point shooter.
 
@@ -87,12 +82,16 @@ Durant is a great 2 point shooter while Thompson and Curry are great 3 point sho
 Overall Effective Shooting Percentage by Player
 </h6>
 </center>
-          name total made perc_made
-    1   Durant   915  495 0.5409836
-    2 Iguodala   371  192 0.5175202
-    3 Thompson  1220  575 0.4713115
-    4    Curry  1250  584 0.4672000
-    5    Green   578  245 0.4238754
+``` r
+arrange(overall, desc(perc_made))
+```
+
+    ##       name total made perc_made
+    ## 1   Durant   915  495 0.5409836
+    ## 2 Iguodala   371  192 0.5175202
+    ## 3 Thompson  1220  575 0.4713115
+    ## 4    Curry  1250  584 0.4672000
+    ## 5    Green   578  245 0.4238754
 
 Looking at the raw statistics, Durant appears to be the Warriors' best shooter. However, it is dangerous to make assumptions based on raw data without analysis. From the statistics above it would appear that Curry is not a good shooter with only 46.7% of his shots going into the basket. The overall shot percentages made disguises the proportion of shots each player takes between 2 pointers and 3 pointers. The likelihood of scoring a 2 is much higher than scoring a 3. Curry and Thompson take so many 3 point shots that it skews their data and makes their overall shot made percentage lower. Durant is known to be a well rounded player who specializes from inside the 3 point line but is also a decent 3 point shooter. Because he takes so many 2 point shots, his overall percentage made is also skewed and makes his percentage made appear much better than the others. Andre Iguodala also boasts a high percentage made but having taken only 371 shots total, it is not as representative of his true ability to shoot. As a result, each Warriors player has their own strengths. Undoubtedly, Curry, Durant, and Thompson are 3 of the best shooters in the league but each specialize in a different kind of shot. Iguodala is also a good shooter given the opportunity but he is not prioritized and only given the ball under certain circumstances. Comparatively Green is not as good of a shooter but his ability to run the defense certainly adds to his personal value towards the team.
 

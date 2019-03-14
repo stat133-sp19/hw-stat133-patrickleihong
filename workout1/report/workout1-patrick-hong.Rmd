@@ -44,7 +44,7 @@ One of the greatest strengths of the Warriors is their ability to shoot. With sh
 
 <center> <h6>2 Point Effective Shooting Percentage by Player </h6> </center>
 
-```{r echo= FALSE, comment=''}
+```{r echo= FALSE, comment=FALSE}
 
 shots_data <- read.csv("../data/shots-data.csv", stringsAsFactors = FALSE)
 
@@ -77,24 +77,10 @@ made_2pt <- c(length(made_2pt_iguodala$shot_made_flag), length(made_2pt_green$sh
 perc_made_2pt <- c(perc_made_2pt_iguodala, perc_made_2pt_green, perc_made_2pt_durant, perc_made_2pt_thompson, perc_made_2pt_curry)
 
 two_pt <- data.frame("name" = name, "total" = total_2pt, "made" = made_2pt, "perc_made" = perc_made_2pt)
-a <- arrange(two_pt, desc(perc_made))
 ```
-
 
 ```{r}
-a
-```
-
-```{r echo=FALSE, comment=FALSE}
-two_ptr <- shots_data[shots_data$shot_type == "2PT Field Goal",]
-two_ptr = two_ptr %>%
-  group_by(name) %>%
-  summarise(made = sum(shot_made_flag == 'shot_yes'), total = sum(shot_made_flag == 'shot_yes' |
-shot_made_flag == 'shot_no'))
-two_ptr <- mutate(two_ptr, perc_made = (made/total))
-two_ptr <- arrange(two_ptr,desc(perc_made))
-two_ptr
-
+arrange(two_pt, desc(perc_made))
 ```
 
 Interestingly, Iguodala has the highest percentage of 2 point field goals made at 63.9%; however, it should be noted that Iguodala shoots significantly less than the other players. Durant, Curry, and Thompson are the primary driving force behind the Warriors' offense. Kevin Durant is the Warriors' best 2 point field goal shooter: he takes the most shots at 643 but still makes 390 of them resulting in a very respectable 61% 2 point field goals made. It is also important to highlight that the average 2 point field goal percentage in the NBA is a mere 45.7%. With all the Warriors players passing that mark shows just how good they are at shooting within the arc.
@@ -135,6 +121,9 @@ perc_made_3pt <- c(perc_made_3pt_iguodala, perc_made_3pt_green, perc_made_3pt_du
 
 three_pt <- data.frame("name" = name, "total" = total_3pt, "made" = made_3pt, "perc_made" = perc_made_3pt)
 
+```
+
+```{r}
 arrange(three_pt, desc(perc_made))
 ```
 
@@ -151,7 +140,9 @@ overall_total <- total_2pt + total_3pt
 overall_made <- made_2pt + made_3pt
 overall_perc_made <- overall_made / overall_total
 overall <- data.frame("name" = name, "total" = overall_total, "made" = overall_made, "perc_made" = overall_perc_made)
+```
 
+```{r}
 arrange(overall, desc(perc_made))
 ```
 
