@@ -80,9 +80,12 @@ two_pt <- data.frame("name" = name, "total" = total_2pt, "made" = made_2pt, "per
 ```
 
 
-```{r}
-arrange(two_pt, desc(perc_made))
+```{r echo = FALSE}
+two_point <- arrange(two_pt, desc(perc_made))
+print(two_point)
 ```
+
+Space
 ```{r echo=FALSE}
 two_ptr <- shots_data[shots_data$shot_type == "2PT Field Goal",]
 two_ptr = two_ptr %>%

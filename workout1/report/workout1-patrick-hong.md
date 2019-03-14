@@ -38,16 +38,14 @@ One of the greatest strengths of the Warriors is their ability to shoot. With sh
 2 Point Effective Shooting Percentage by Player
 </h6>
 </center>
-``` r
-arrange(two_pt, desc(perc_made))
-```
-
     ##       name total made perc_made
     ## 1 Iguodala   210  134 0.6380952
     ## 2   Durant   643  390 0.6065319
     ## 3    Curry   563  304 0.5399645
     ## 4 Thompson   640  329 0.5140625
     ## 5    Green   346  171 0.4942197
+
+Space
 
     ## # A tibble: 5 x 4
     ##   name            made total perc_made
