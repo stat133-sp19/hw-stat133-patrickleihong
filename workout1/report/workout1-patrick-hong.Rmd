@@ -1,14 +1,16 @@
 ---
 title: "workout01-patrick-hong"
 author: "Patrick Hong"
-date: "March 10, 2019"
+date: "March 11, 2019"
 output: github_document
 ---
+
 ### Golden State Warriors 2016-2017 Season Full Recap 
 
 ```{r message = FALSE, echo = FALSE}
 library(dplyr)
 ```
+
 ```{r outwidth='80%', echo = FALSE, fig.align='center'}
 knitr::include_graphics("../images/2017_championship_photo.png")
 
@@ -41,7 +43,8 @@ Undoubtedly, the Warriors are one of the most successful teams in NBA history. A
 One of the greatest strengths of the Warriors is their ability to shoot. With shooting being the most important statistic in basketball, the Warriors' effective shooting percentage leads the league and is a big reason why they are so successful. Below is a table showing the effective 2 point shooting percentages for the Warriors' best players: Curry, Green, Durant, Thompson, and Iguodala.
 
 <center> <h6>2 Point Effective Shooting Percentage by Player </h6> </center>
-```{r echo= FALSE, comment=NA }
+
+```{r echo= FALSE, comment=''}
 
 shots_data <- read.csv("../data/shots-data.csv", stringsAsFactors = FALSE)
 
