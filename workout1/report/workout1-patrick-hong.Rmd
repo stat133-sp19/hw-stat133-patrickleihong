@@ -80,8 +80,19 @@ two_pt <- data.frame("name" = name, "total" = total_2pt, "made" = made_2pt, "per
 ```
 
 
-```{r echo=FALSE}
+```{r}
 arrange(two_pt, desc(perc_made))
+```
+```{r echo=FALSE}
+two_ptr <- shots_data[shots_data$shot_type == "2PT Field Goal",]
+two_ptr = two_ptr %>%
+  group_by(name) %>%
+  summarise(made = sum(shot_made_flag == 'shot_yes'), total = sum(shot_made_flag == 'shot_yes' |
+shot_made_flag == 'shot_no'))
+two_ptr <- mutate(two_ptr, perc_made = (made/total))
+two_ptr <- arrange(two_ptr,desc(perc_made))
+two_ptr
+
 ```
 
 Interestingly, Iguodala has the highest percentage of 2 point field goals made at 63.9%; however, it should be noted that Iguodala shoots significantly less than the other players. Durant, Curry, and Thompson are the primary driving force behind the Warriors' offense. Kevin Durant is the Warriors' best 2 point field goal shooter: he takes the most shots at 643 but still makes 390 of them resulting in a very respectable 61% 2 point field goals made. It is also important to highlight that the average 2 point field goal percentage in the NBA is a mere 45.7%. With all the Warriors players passing that mark shows just how good they are at shooting within the arc.
