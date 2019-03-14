@@ -80,7 +80,7 @@ two_pt <- data.frame("name" = name, "total" = total_2pt, "made" = made_2pt, "per
 ```
 
 
-```{r}
+```{r echo=FALSE}
 arrange(two_pt, desc(perc_made))
 ```
 
