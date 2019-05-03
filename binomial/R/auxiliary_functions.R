@@ -7,7 +7,11 @@ aux_variance <- function(trials, prob){
 }
 
 aux_mode <- function(trials, prob){
-  return(floor(trials * prob + prob))
+  mode <- trials * prob + prob
+  if(mode %% 1== 0 & prob %% 2 !=0){
+    return (c(mode, mode-1))
+  }
+  return (floor(mode))
 }
 
 aux_skewness <- function(trials, prob){
