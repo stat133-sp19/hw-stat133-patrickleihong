@@ -34,53 +34,9 @@ Install the development version from GitHub via the package `"devtools"`:
 
 # install "binomial" (without vignettes)
 devtools::install_github("stat133-sp19/hw-stat133-patrickleihong/Binomial/")
-#> Downloading GitHub repo stat133-sp19/hw-stat133-patrickleihong@master
-#>   
-  
-  
-   checking for file 'C:\Users\patri\AppData\Local\Temp\Rtmp0Mmw46\remotes32a8d036025\stat133-sp19-hw-stat133-patrickleihong-b036917\Binomial/DESCRIPTION' ...
-  
-   checking for file 'C:\Users\patri\AppData\Local\Temp\Rtmp0Mmw46\remotes32a8d036025\stat133-sp19-hw-stat133-patrickleihong-b036917\Binomial/DESCRIPTION' ... 
-  
-v  checking for file 'C:\Users\patri\AppData\Local\Temp\Rtmp0Mmw46\remotes32a8d036025\stat133-sp19-hw-stat133-patrickleihong-b036917\Binomial/DESCRIPTION'
-#> 
-  
-  
-  
--  preparing 'binomial':
-#> 
-  
-   checking DESCRIPTION meta-information ...
-  
-   checking DESCRIPTION meta-information ... 
-  
-v  checking DESCRIPTION meta-information
-#> 
-  
-  
-  
--  checking for LF line-endings in source and make files and shell scripts
-#> 
-  
-  
-  
--  checking for empty or unneeded directories
-#> 
-  
-  
-  
--  building 'binomial_0.1.0.tar.gz'
-#> 
-  
-   
-#> 
-#> Installing package into 'C:/Users/patri/OneDrive/Documents/R/win-library/3.5'
-#> (as 'lib' is unspecified)
 
 # install "binomial" (with vignettes)
 devtools::install_github("stat133-sp19/hw-stat133-patrickleihong/Binomial/", build_vignettes = TRUE)
-#> Skipping install of 'binomial' from a github remote, the SHA1 (b0369177) has not changed since last install.
-#>   Use `force = TRUE` to force installation
 ```
 
 Usage
