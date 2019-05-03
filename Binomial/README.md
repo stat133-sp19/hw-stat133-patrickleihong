@@ -12,11 +12,11 @@ Overview
 -   `plot.bincum()` - method for a `bincum` object to plot the binomial cumulative distribution.
 -   `bin_variable()` - creates a list based off named elements `trials` and `prob`.
 -   `summary.binvar()` - method for a `binvar` object and compiles summary measures into a list.
--   `bin_mean()`- computes the mean of a binomial distribution
--   `bin_variance()`- computes the variance of a binomial distribution
--   `bin_mode()` - computes the mode of a binomial distribution
--   `bin_skewness()` - computes the skewness of a binomial distribution
--   `bin_kurtosis()` - computes the kurtosis of a binomial distribution
+-   `bin_mean()`- computes the mean of a binomial distribution.
+-   `bin_variance()`- computes the variance of a binomial distribution.
+-   `bin_mode()` - computes the mode of a binomial distribution.
+-   `bin_skewness()` - computes the skewness of a binomial distribution.
+-   `bin_kurtosis()` - computes the kurtosis of a binomial distribution.
 
 Motivation
 ----------
@@ -33,10 +33,10 @@ Install the development version from GitHub via the package `"devtools"`:
 #install.packages("devtools") 
 
 # install "binomial" (without vignettes)
-devtools::install_github("stat133-sp19/hw-stat133-patrickleihong/Binomial/")
+devtools::install_github("stat133-sp19/hw-stat133-patrickleihong/binomial/")
 
 # install "binomial" (with vignettes)
-devtools::install_github("stat133-sp19/hw-stat133-patrickleihong/Binomial/", build_vignettes = TRUE)
+devtools::install_github("stat133-sp19/hw-stat133-patrickleihong/binomial/", build_vignettes = TRUE)
 ```
 
 Usage
