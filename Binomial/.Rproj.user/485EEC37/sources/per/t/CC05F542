@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1556837693323.000,
+    "dirty" : false,
+    "encoding" : "ISO8859-1",
+    "folds" : "",
+    "hash" : "2748007850",
+    "id" : "CC05F542",
+    "lastKnownWriteTime" : 1556837077,
+    "last_content_update" : 1556837077,
+    "path" : "C:/Users/patri/OneDrive/Desktop/Workout 3/Binomial/tests/testthat/test-auxiliary-functions.R",
+    "project_path" : "tests/testthat/test-auxiliary-functions.R",
+    "properties" : {
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

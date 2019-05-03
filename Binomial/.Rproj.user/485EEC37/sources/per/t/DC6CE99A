@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1556875761194.000,
+    "dirty" : false,
+    "encoding" : "ISO8859-1",
+    "folds" : "",
+    "hash" : "1042842729",
+    "id" : "DC6CE99A",
+    "lastKnownWriteTime" : 1556875775,
+    "last_content_update" : 1556875775,
+    "path" : "C:/Users/patri/OneDrive/Desktop/Workout 3/Binomial/NAMESPACE",
+    "project_path" : "NAMESPACE",
+    "properties" : {
+        "cursorPosition" : "2,0",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 13,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_namespace"
+}
