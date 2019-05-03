@@ -4,19 +4,19 @@ Overview
 
 `"binomial"` is a package specifically designed to provide functions that are able to calculate binomial probabilities and similar measures. The package offers the following functions:
 
--   `bin_choose()`
--   `bin_probability()`
--   `bin_distribution()`
--   `plot.bindis()`
--   `bin_cumulative()`
--   `plot.bincum()`
--   `bin_variable()`
--   `summary.binvar()`
--   `bin_mean()`
--   `bin_variance()`
--   `bin_mode()`
--   `bin_skewness()`
--   `bin_kurtosis()`
+-   `bin_choose()` - calculates number of combinations in which `k` number of successes occur in `n` trials.
+-   `bin_probability()` - computes the binomial probability.
+-   `bin_distribution()` - creates a dataframe with two classes, `bindis, data.frame`, of the binomial distribution.
+-   `plot.bindis()` - method for a `bindis` object to plot the binomial distribution.
+-   `bin_cumulative()`- creates a dataframe with two classes, `bincum, data.frame`, of the binomial cumulative distribution.
+-   `plot.bincum()` - method for a `bincum` object to plot the binomial cumulative distribution.
+-   `bin_variable()` - creates a list based off named elements `trials` and `prob`.
+-   `summary.binvar()` - method for a `binvar` object and compiles summary measures into a list.
+-   `bin_mean()`- computes the mean of a binomial distribution
+-   `bin_variance()`- computes the variance of a binomial distribution
+-   `bin_mode()` - computes the mode of a binomial distribution
+-   `bin_skewness()` - computes the skewness of a binomial distribution
+-   `bin_kurtosis()` - computes the kurtosis of a binomial distribution
 
 Motivation
 ----------
@@ -42,7 +42,7 @@ devtools::install_github("stat133-sp19/hw-stat133-patrickleihong/Binomial/", bui
 Usage
 -----
 
-Here is a quick demonstration what each function does:
+Here is a quick demonstration of what each function does:
 
 ``` r
 library(binomial)
